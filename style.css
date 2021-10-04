@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-family: "Nanum gothic";
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0px 40px; 
+    /* grid-template-areas: ". content content content content ."; */
+}
+@media(max-width: 560px){
+    .grid{
+        grid-template-columns: auto;
+        padding: 0px 20px;
+    }
+}
+header{
+    background-color: #005681;
+    position: relative;
+    z-index: 2;
+
+}
+
+.content{
+   /* grid-area: content; */
+   grid-column: 2/6;
+   max-width: 1000px;
+   width:100%;
+   color:white;
+}
+
+
+
+
+
+.brand-row{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.brand-row .logo{
+    grid-column: 2/3;
+    justify-self: end;
+    margin-right: .6em;
+    height: 2em;
+}
+.brand-row .brand-name{
+    grid-column: 3/6;
+}
+@media(max-width: 880px){
+    .brand-row{
+        grid-template-columns: auto;
+        
+    }
+    .brand-row .logo{
+        justify-self: initial;
+        margin-right: .6em;
+        height: 2em;   
+    }
+}
+
+
+
+.title{
+    text-align: center;
+    margin-top: -.4em;
+}
+.sub-title{
+    text-align: center;
+    margin-top: -.4em;
+}
+.dark-header-divider{
+    background-image: url(1.svg);
+    height:200px;
+    background-position: bottom left;
+    background-size: cover;
+    margin-top:-2px;
+    position: relative;
+    z-index: 3;
+}
+.light-header-divider{
+    background-image: url(4.svg);
+    height: 200px;
+    background-position: bottom left;
+    background-size:cover;
+    margin-top: -3px;
+}
+.light-header{
+    background-color: #0af;
+    padding-top:200px;
+    margin-top:-200px;
+    
+}
+
+
+
+
+.form-email{
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.input-email{
+    grid-column: 1/4;
+    padding:.5em;
+    outline: none;
+    border-radius: 5px;
+    border:none;
+    margin-right: 5px;
+}
+.button-submit{
+    grid-column: 4/5;
+    padding: .5em;
+    outline:none;
+    border-radius:5px;
+    border:none;
+    cursor: pointer;
+    background-color: #222;
+    color: rgb(226, 226, 226);
+    transition: 350ms ease-in;
+}
+.button-submit:hover,
+.button-focus{
+    background-color: #555;
+}
+@media(max-width: 540px){
+    .form-email{
+        grid-template-columns: 1fr;
+        grid-template-areas: "input-email""button-submit";
+        margin-left: -10%;
+    }
+    .input-email{
+        grid-area: input-email;
+        min-width:100%;
+    }
+    .button-submit{
+        grid-area: button-submit;
+        min-width: 100%;
+    }
+}
