@@ -8,27 +8,51 @@
     <title>Landing page</title>
 </head>
 <body>
-    <header class="grid dark-header">
-        <div class="content">
-            <div class="brand-row">
-                <img src="5.svg" alt="logo" class="logo">
-                <h2 class="brand-name">Web Div Simplified</h2>
+    <section class="head">
+        <header class="grid dark-header">
+            <div class="content">
+                <div class="brand-row">
+                    <img src="5.svg" alt="logo" class="logo">
+                    <h2 class="brand-name">Web Div Simplified</h2>
+                </div>
+                <h1 class="title">Exclusive Course Discounts</h1>
+                <h3 class="sub-title">Be the first to know whe my <em>Learn React Today</em> Course drops!</h3>
             </div>
-            <h1 class="title">Exclusive Course Discounts</h1>
-            <h3 class="sub-title">Be the first to know whe my <em>Learn React Today</em> Course drops!</h3>
+        </header>
+        <div class="dark-header-divider"></div>
+    
+    
+        <div class="grid light-header">
+            <div class="content">
+                <form action="/email" class="form-email" method="POST">
+                    <input type="email" class="input-email" placeholder="Enter email">
+                    <button type="submit" class="button-submit">Join now</button>
+                </form>
+            </div>
         </div>
-    </header>
-    <div class="dark-header-divider"></div>
-
-
-    <div class="grid light-header">
-        <div class="content">
-            <form action="/email" class="form-email" method="POST">
-                <input type="email" class="input-email" placeholder="Enter email">
-                <button type="submit" class="button-submit">Join now</button>
-            </form>
+        <div class="light-header-divider"></div>
+    </section>
+    <section class="middle">
+        <div class="grid grid-video">
+            <video poster="http://unsplash.it/400/300?gravity=center" controls> 
+                 <source src="video.mp4" type="video/mp4">
+            </video>
+            <div class="benefits-section">
+                <div class="single-benefit">
+                    <img src="2.svg" alt="">
+                    Email Updates
+                </div>
+                <div class="single-benefit">
+                    <img src="5.svg" alt="">
+                    Special Discounts
+                </div>
+                <div class="single-benefit">
+                    <img src="3.svg" alt="">
+                    Exclusive Content
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="light-header-divider"></div>
+    </section>
+   
 </body>
 </html>
