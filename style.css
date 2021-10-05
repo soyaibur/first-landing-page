@@ -163,6 +163,10 @@ header{
 
 
 
+
+
+
+
 /* This is middle section Start */
 
 
@@ -229,5 +233,33 @@ header{
         margin-bottom: 1em;
     }
 }
+
+
+
+
+
+
+
+
+
+/* Starting of benefits details Section */
+.grid-benefits-details{
+    margin-top: 3em;
+    gap:50px;
+    
+}
+.single-benefit-details{
+    grid-column: span 2;
+    display: grid;
+    text-align: center;
+    
+}
+.single-benefit-details h3{
+    margin-bottom:-5px;
+}
+
+
+
+
 
 
