@@ -251,13 +251,23 @@ header{
 .single-benefit-details{
     grid-column: span 2;
     display: grid;
-    text-align: center;
-    
+    text-align: center;   
 }
 .single-benefit-details h3{
     margin-bottom:-5px;
 }
+@media(max-width: 900px){
+    .grid-benefits-details{
+        margin-top: 2em;
+        gap:20px; 
+    } 
+}
+@media(max-width: 800px){
+    .grid-benefits-details{
+       grid-template-columns: 1fr; 
+    }
 
+}
 
 
 
